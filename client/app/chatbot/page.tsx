@@ -56,7 +56,7 @@ export default function ChatbotPage() {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer oat_MjE4OA.OGZEMXJBTWJOTFRVUTFab3dJZUhSLUFuZ2RlLXVtTlJpVTZZWGJKZDEzMzAyODA0MzA`,
+            Authorization: `Bearer ${process.env.LEMME_BUILD_KEY}`,
           },
           body: JSON.stringify({ situation: input }),
         }
