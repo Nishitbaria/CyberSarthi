@@ -29,6 +29,9 @@ export default function Component() {
                     <Button variant="ghost" asChild>
                         <Link href="/tools/LinkScanner">LinkScanner</Link>
                     </Button>
+                    <Button variant="ghost" asChild>
+                        <Link href="/chatbot">chatbot</Link>
+                    </Button>
                 </div>
                 <Sheet open={isOpen} onOpenChange={setIsOpen}>
                     <SheetTrigger asChild className="md:hidden">

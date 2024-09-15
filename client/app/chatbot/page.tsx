@@ -102,7 +102,7 @@ export default function ChatbotPage() {
       <Card className="w-full max-w-2xl h-[600px] flex flex-col">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">
-            RAG Chatbot Made with lemme Build
+            AntiScamer Assistant Chatbot
           </CardTitle>
         </CardHeader>
         <CardContent className="flex-grow overflow-hidden">
