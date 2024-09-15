@@ -102,7 +102,7 @@ export default function ChatbotPage() {
       <Card className="w-full max-w-2xl h-[600px] flex flex-col">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">
-            AntiScamer Assistant Chatbot
+            Scam Assistant Chatbot
           </CardTitle>
         </CardHeader>
         <CardContent className="flex-grow overflow-hidden">
@@ -110,18 +110,21 @@ export default function ChatbotPage() {
             {messages.map((message, index) => (
               <div
                 key={index}
-                className={`flex items-start mb-4 ${message.role === "user" ? "justify-end" : "justify-start"
-                  }`}
+                className={`flex items-start mb-4 ${
+                  message.role === "user" ? "justify-end" : "justify-start"
+                }`}
               >
                 <div
-                  className={`flex items-start space-x-2 ${message.role === "user"
-                    ? "flex-row-reverse space-x-reverse"
-                    : ""
-                    }`}
+                  className={`flex items-start space-x-2 ${
+                    message.role === "user"
+                      ? "flex-row-reverse space-x-reverse"
+                      : ""
+                  }`}
                 >
                   <div
-                    className={`w-8 h-8 rounded-full flex items-center justify-center ${message.role === "user" ? "bg-blue-500" : "bg-green-500"
-                      }`}
+                    className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                      message.role === "user" ? "bg-blue-500" : "bg-green-500"
+                    }`}
                   >
                     {message.role === "user" ? (
                       <User size={20} className="text-white" />
@@ -130,11 +133,14 @@ export default function ChatbotPage() {
                     )}
                   </div>
                   <div
-                    className={`max-w-[70%] rounded-lg p-3 ${message.role === "user" ? "bg-blue-100" : "bg-green-100"
-                      }`}
+                    className={`max-w-[70%] rounded-lg p-3 ${
+                      message.role === "user" ? "bg-blue-100" : "bg-green-100"
+                    }`}
                   >
                     <p className="text-sm">
-                      {typeof message.content === 'string' ? message.content : JSON.stringify(message.content)}
+                      {typeof message.content === "string"
+                        ? message.content
+                        : JSON.stringify(message.content)}
                     </p>
                   </div>
                 </div>
