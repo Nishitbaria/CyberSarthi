@@ -17,7 +17,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Created at HTM",
+  title: "Cyber Sarthi",
   description: "Scam Assistance Service",
 };
 
