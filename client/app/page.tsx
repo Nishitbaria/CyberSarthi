@@ -146,7 +146,7 @@ export default function ScamReportingForm() {
             <Link href="https://happy-cohen-admiring.lemme.cloud/" className="block text-blue-600 hover:underline dark:text-blue-400">
               View Workflow
             </Link>
-            <Link href="https://happy-cohen-admiring.lemme.cloud/" className="block text-blue-600 hover:underline dark:text-blue-400">
+            <Link href="/chatbot" className="block text-blue-600 hover:underline dark:text-blue-400">
               Click here to see the live demo of the Lemme Build app
             </Link>
           </div>
